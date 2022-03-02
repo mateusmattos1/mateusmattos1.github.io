@@ -334,7 +334,7 @@ body {
 
 .profile-pic img {
 	margin-top: 0;
-	max-width: 75%;
+	max-width: 100%;
 
 }
 
@@ -357,7 +357,7 @@ body {
 }
 
 .main p {
-	text-align: left;
+	text-align: justify;
 	line-height: 30px;
 }
 
@@ -374,7 +374,7 @@ body {
 
 .miniatura {
 	max-width: 80%;
-	background-size: auto 100%
+	background-size: auto 100%;
 
 }
 
@@ -384,9 +384,8 @@ body {
 
 .main .tet p{
 	width: auto;
-	padding: 5px 5% 0px 0px;
+	padding: 5px 25px 0px 0px;
 		   margin-left: 25px;
-
 	display: block;
 
 }
@@ -410,10 +409,11 @@ body {
 }
 	
 .foto-trabalhos {
-	width: 80%;
+	width: 94%;
 	margin-bottom: 5px;
 	margin-top: 5px;
 	display: block;
+	padding-right: 25px;
     margin-left: 25px;
     margin-right: auto;
 
