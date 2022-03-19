@@ -202,6 +202,7 @@ body {
 	margin-left: 10px;
 	margin-right: 10px;
 	display: inline-block;
+	background-size: contain;
 }
 
 .cv-pic {
@@ -403,6 +404,13 @@ body {
 	background-size: auto 100%;
 
 }
+
+.capao {
+	max-width: 80%;
+	background-size: auto 100%;
+
+}
+
 
 .blackbox {
 	opacity: 0.8;
