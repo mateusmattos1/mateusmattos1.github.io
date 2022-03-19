@@ -20,7 +20,9 @@ body {
 	animation-duration: 4s;
 }
 
-
+.paragrafo {
+	text-decoration: none;
+}
 
 .navigation ul {
 	margin-top: 0;
@@ -176,6 +178,30 @@ body {
 	overflow: hidden;
 	animation-name: imagem;
 	animation-duration: 4s;
+}
+
+.primeira {
+	width: 320px;
+	height: 320px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	display: inline-block;
+	background-size: contain;
+	overflow: hidden;
+	animation-name: imagem;
+	animation-duration: 4s;
+}
+
+
+.capao{
+	width: 50px;
+	height: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-block;
 }
 
 .cv-pic {
