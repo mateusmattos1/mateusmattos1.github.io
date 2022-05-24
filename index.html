@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-
 <html>
 
-	<head>
-	
-		<title> Mateus de Mattos - Portfólio Online </title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			<meta charset = "utf-8">
-			<link rel = "stylesheet" href = "css/style.css">
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
-			<script type="text/javascript" src="js/scripts.js"></script>
-			<meta name = "viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon" />
+	<link rel="stylesheet" href="./assets/css/style.css">
 
-	</head>
+	<title> Mateus de Mattos - Portfólio Online </title>
+</head>
 
+<body>
+	<div id="navigation" class="navigation">
+		<ul>
+			<li>
+				<a href="index.html">
+					Home
+				</a>
+			</li>
+			<li>
+				<a href="./src/portfolio.html">
+					Portfólio
+				</a>
+			</li>
+			<li>
+				<a href="./src/curriculo.html">
+					Currículo
+				</a>
+			</li>
+			<li>
+				<a href="./src/contato.html">
+					Contato
+				</a>
+			</li>
+			<li id="threeline-icon" class="threeline-icon" onclick="openNav()">&#9776;</li>
+		</ul>
+	</div>
 
-	<body>
-
-		<div id="navigation" class = "navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="portfolio.html">Portfólio</a></li>
-				<li><a href="curriculo.html">Currículo</a></li>
-				<li><a href="contato.html">Contato</a></li>
-				<li id="threeline-icon" class = "threeline-icon" onclick="openNav()">&#9776;</li>
-			</ul>
+	<div class="capa">
+		<div class="profile-pic">
+			<img src="./assets/img/fotocapa.png" alt="Foto de Mateus de Mattos">
 		</div>
-
-		<div class = "capa">
-
-			<div class = "profile-pic">
-				<img src = "img/fotocapa.png" alt = "Foto de Mateus de Mattos">
-			</div>
-
-			<div class = "profile-title">
-				<h1> Mateus <span> de Mattos Ferreira </span> </h1>
-				<h2> Programador de Sistemas - Analista de Dados</h2> 
-			</div>
-
+		<div class="profile-title">
+			<h1> Mateus <span> de Mattos Ferreira </span> </h1>
+			<h2> Programador de Sistemas - Analista de Dados</h2>
 		</div>
+	</div>
+	<script type="text/javascript" src="./assets/js/scripts.js"></script>
+</body>
 
 </html>

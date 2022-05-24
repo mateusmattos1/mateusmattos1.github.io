@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #2b2b2b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navigation {
+  background-color: #2b2b2b;
+  color: white;
+  height: 50px;
+  animation-name: navee;
+  animation-duration: 4s;
+}
+
+.paragrafo {
+  text-decoration: none;
+}
+
+.navigation ul {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  height: 50px;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #f27609;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.capa {
+  color: white;
+}
+
+.capa span {
+  color: #f27609;
+  display: block;
+}
+
+.capa div {
+  display: inline-block;
+  height: 650px;
+}
+
+.profile-pic {
+  text-align: center;
+  width: 40%;
+  animation-name: profile-capa;
+  animation-duration: 3s;
+}
+
+.profile-pic img {
+  width: 320px;
+  border-radius: 320px;
+  margin-top: 100px;
+}
+
+.profile-title {
+  vertical-align: top;
+  width: 59%;
+  animation-name: titulo-capa;
+  animation-duration: 3s;
+}
+
+.profile-title h1 {
+  font-size: 58px;
+  margin-top: 200px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+.profile-title h2 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: -26px;
+  margin-left: 5px;
+}
+
+.main {
+  padding: 50px 180px 80px 100px;
+  animation-name: conteudo;
+  animation-duration: 2s;
+}
+
+.cv-pic {
+  float: right;
+  width: 360px;
+}
+
+.main h1 {
+  color: #f27609;
+  font-weight: bold;
+}
+
+.main h2 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+.main h3 {
+  font-size: 16px;
+  color: #f27609;
+  text-transform: uppercase;
+}
+
+.main p {
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.caminho {
+  list-style: none;
+  padding-left: 0;
+  color: grey;
+}
+
+.caminho li {
+  display: inline-block;
+}
+
+.titulos h1 {
+  font-weight: bold;
+}
+
+.titulos h2 {
+  font-weight: bold;
+}
+
+.social-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.miniatura {
+  width: 320px;
+  height: 320px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  display: inline-block;
+  background-size: contain;
+  overflow: hidden;
+  animation-name: imagem;
+  animation-duration: 4s;
+}
+
+.primeira {
+  width: 320px;
+  height: 320px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  display: inline-block;
+  background-size: contain;
+  overflow: hidden;
+  animation-name: imagem;
+  animation-duration: 4s;
+}
+
+.capao {
+  width: 50px;
+  height: 50px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-size: contain;
+}
+
+.cv-pic {
+  animation-name: imagem;
+  animation-duration: 4s;
+}
+
+.blackbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  padding-top: 120px;
+  transition: 1s;
+}
+
+.miniatura a {
+  text-decoration: none;
+}
+
+.blackbox:hover {
+  opacity: 0.8;
+  transition: 1s;
+}
+
+.blackboxtext {
+  text-align: center;
+}
+
+.blackboxtext h1 {
+  font-size: 16px;
+  color: #f27609;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+
+.blackboxtext h2 {
+  text-transform: none;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+.foto-trabalhos {
+  width: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .tet p {
+  width: 50%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .tet h2 {
+  width: 50%;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main .tet h1 {
+  text-align: center;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.cortitulo {
+  color: #f27609;
+  font-weight: bold;
+}
+
+.navigation li.threeline-icon {
+  display: none;
+}
+
+.navigation li.threeline-icon:hover {
+  color: #f27609;
+  cursor: pointer;
+}
+
+.caminho a {
+  color: grey;
+}
+
+/* .tet h1,
+h2,
+p,
+a {
+} */
+
+@keyframes profile-capa {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate (0px, 0px);
+  }
+}
+
+@keyframes titulo-capa {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate (0px, 0px);
+  }
+}
+
+@keyframes imagem {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes navee {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes conteudo {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate (0px, 0px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .navigation li {
+    display: none;
+  }
+
+  .navigation li.threeline-icon {
+    display: inline-block;
+  }
+
+  .profile-pic {
+    width: 100%;
+  }
+
+  .profile-title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .capa div {
+    display: block;
+    height: auto;
+  }
+
+  .profile-pic img {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .profile-title h1 {
+    margin-top: 30px;
+    font-size: 36px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .profile-title h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main {
+    padding: 10px 5% 40px 5%;
+  }
+
+  .main p {
+    text-align: justify;
+    line-height: 30px;
+  }
+
+  .caminho li {
+    font-size: 14px;
+  }
+
+  .cv-pic {
+    float: none;
+    max-width: 80%;
+    margin-right: auto;
+  }
+
+  .miniatura {
+    max-width: 80%;
+    background-size: auto 100%;
+  }
+
+  .capao {
+    max-width: 80%;
+    background-size: auto 100%;
+  }
+
+  .blackbox {
+    opacity: 0.8;
+  }
+
+  .main .tet p {
+    width: auto;
+    padding: 5px 25px 0px 0px;
+    margin-left: 25px;
+
+    display: block;
+  }
+
+  .main .tet h2 {
+    width: 80%;
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 0px;
+    padding-top: 50px;
+  }
+
+  .main .tet h1 {
+    margin-left: 0px;
+    text-align: left;
+    padding: 10px 10px 10px 25px;
+    width: 80%;
+    font-size: 26px;
+  }
+
+  .foto-trabalhos {
+    width: 89%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-right: 0%;
+    margin-left: 6%;
+    display: block;
+    float: left;
+  }
+
+  .menujs {
+    height: auto;
+  }
+
+  .menujs ul {
+    height: auto;
+    text-align: center;
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .menujs li {
+    display: block;
+    border-bottom: solid grey 1px;
+    width: 100%;
+    padding: 0;
+  }
+}
