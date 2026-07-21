@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>CRUD Completo - Mateus de Mattos Ferreira</title>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">mateus<span>mattos</span></a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/portfolio" class="active">Portfólio</a></li>
+        <li><a href="/curriculo">Currículo</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <ul class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      <li class="sep">›</li>
+      <li><a href="/portfolio">Portfólio</a></li>
+      <li class="sep">›</li>
+      <li>CRUD Completo</li>
+    </ul>
+  </div>
+
+  <main class="content">
+    <div class="project-detail">
+      <h1 class="project-detail-title">CRUD Completo</h1>
+
+      <img src="/assets/img/trabalhos/telacrud.jpg" alt="CRUD - Tela principal">
+
+      <h2>Descrição do projeto</h2>
+
+      <p>Quando quis aprofundar um pouco mais em <i>Spring Boot</i>, encontrei um curso que ensinava a fazer um <b style="color: var(--accent)">CRUD</b> na plataforma da <i>JDEV Treinamentos</i>. Até o momento, eu ainda não sabia o que era CRUD, mas me interessei muito nesse tipo de projeto, e gostei muito de produzir esse trabalho, onde tive que ralar um pouquinho, visto que eu ainda estava aprendendo a usar mais profundamente o <i>Javascript</i>. De qualquer forma, foi muito bom para meu desenvolvimento profissional, já que toda a parte que eu menos sabia manejar, ficou bem claro.</p>
+
+      <p>De modo mais detalhado, nesse <b style="color: var(--accent)">CRUD</b> nós temos duas telas, onde temos a tela principal de cadastro de uma pessoa com <i>nome</i> e <i>idade</i>. O <b>ID</b> da pessoa é setado automaticamente, e na segunda tela podemos pesquisar as pessoas cadastradas pelo nome em que atribuímos no cadastro. Ainda nessa tela de pesquisa, conforme imagem abaixo, podemos setar uma pessoa que pesquisamos e então <b>modificar</b> seu nome ou sua idade na tela principal.</p>
+
+      <img src="/assets/img/trabalhos/telapesquisa.jpg" alt="CRUD - Tela de pesquisa">
+
+      <p>Falando mais especificamente das tecnologias utilizadas, utilizei <b>Spring</b> no backend com o <b>Java 17</b>, onde trabalhei com o <i>Tomcat</i> e o <i>Maven</i>. Além disso, também fiz a conexão com o banco (utilizei o <i>Postgres</i>) pelo <i>properties</i>, onde para meu desenvolvimento utilizei um banco na minha máquina, sendo substituído pelo banco do <i>Heroku</i> quando publiquei o site.</p>
+
+      <p>Se tratando do <b>Bootstrap</b>, graças ao ensino do mentor das aulas, foi de fácil entendimento toda a parte do <i>JQuery</i> e da relação entre os sistemas de back e front que foram utilizados no projeto. O projeto foi totalmente desenvolvido pelo <i>Eclipse</i>, e isso ajudou bastante na navegação para relacionar as duas linguagens.</p>
+
+      <a href="https://github.com/mateusmattos1/crudcompleto" target="_blank" rel="noopener" class="project-github">
+        ⚡ Ver no GitHub
+      </a>
+
+      <div class="back-links">
+        <a href="/portfolio" class="back-link">← Portfólio</a>
+        <a href="/" class="back-link">← Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Mateus de Mattos Ferreira</p>
+  </footer>
+
+  <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
