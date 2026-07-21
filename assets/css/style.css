@@ -99,8 +99,7 @@ body {
 }
 
 .main {
-  padding: 50px 180px 80px 100px;
-  animation-name: conteudo;
+  padding: 20px 180px 80px 100px;
   animation-duration: 2s;
 }
 
