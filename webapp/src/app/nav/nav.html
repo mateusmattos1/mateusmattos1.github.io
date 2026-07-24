@@ -1,0 +1,12 @@
+<nav class="nav">
+  <div class="nav-inner">
+    <a routerLink="/" class="nav-logo" (click)="close()">mateus<span>mattos</span></a>
+    <ul class="nav-links" [class.open]="open()">
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="close()">Home</a></li>
+      <li><a routerLink="/portfolio" routerLinkActive="active" (click)="close()">Portfólio</a></li>
+      <li><a routerLink="/curriculo" routerLinkActive="active" (click)="close()">Currículo</a></li>
+      <li><a routerLink="/contato" routerLinkActive="active" (click)="close()">Contato</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu" (click)="toggle()">{{ open() ? '✕' : '☰' }}</button>
+  </div>
+</nav>

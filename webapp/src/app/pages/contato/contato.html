@@ -1,0 +1,43 @@
+<div class="page-header">
+  <ul class="breadcrumb">
+    <li><a routerLink="/">Home</a></li>
+    <li class="sep">›</li>
+    <li>Contato</li>
+  </ul>
+  <h1 class="page-title">Contato</h1>
+</div>
+
+<main class="content">
+
+  <div class="contact-grid" appFadeIn>
+    <div class="contact-card">
+      <div class="contact-icon">📧</div>
+      <h3>E-mail</h3>
+      <p><a href="mailto:mateusmattos327@gmail.com">mateusmattos327&#64;gmail.com</a></p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">📱</div>
+      <h3>Telefone</h3>
+      <p><a href="https://api.whatsapp.com/send?phone=5527997865995&text=Ol%C3%A1!" target="_blank" rel="noopener">+55 (027) 99786-5995</a></p>
+      <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Clique para abrir no WhatsApp</p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-icon">💻</div>
+      <h3>GitHub</h3>
+      <p><a href="https://github.com/mateusmattos1" target="_blank" rel="noopener">github.com/mateusmattos1</a></p>
+    </div>
+  </div>
+
+  <h2 class="section-title" appFadeIn>Redes Sociais</h2>
+
+  <div class="social-links" appFadeIn>
+    @for (link of socialLinks; track link.label) {
+      <a [href]="link.url" target="_blank" rel="noopener" class="social-btn">
+        {{ link.icon }} {{ link.label }}
+      </a>
+    }
+  </div>
+
+</main>

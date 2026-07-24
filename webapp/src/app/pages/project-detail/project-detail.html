@@ -1,0 +1,38 @@
+@if (project) {
+  <div class="page-header">
+    <ul class="breadcrumb">
+      <li><a routerLink="/">Home</a></li>
+      <li class="sep">›</li>
+      <li><a routerLink="/portfolio">Portfólio</a></li>
+      <li class="sep">›</li>
+      <li>{{ project.breadcrumbLabel }}</li>
+    </ul>
+  </div>
+
+  <main class="content">
+    <div class="project-detail">
+      <h1 class="project-detail-title" appFadeIn>{{ project.title }}</h1>
+
+      <img [src]="project.heroImage.src" [alt]="project.heroImage.alt" appFadeIn>
+
+      <h2 appFadeIn>Descrição do projeto</h2>
+
+      @for (block of project.body; track $index) {
+        @if (block.type === 'p') {
+          <p appFadeIn [innerHTML]="block.html"></p>
+        } @else {
+          <img [src]="block.src" [alt]="block.alt" appFadeIn>
+        }
+      }
+
+      <a [href]="project.githubUrl" target="_blank" rel="noopener" class="project-github" appFadeIn>
+        ⚡ Ver no GitHub
+      </a>
+
+      <div class="back-links">
+        <a routerLink="/portfolio" class="back-link">← Portfólio</a>
+        <a routerLink="/" class="back-link">← Home</a>
+      </div>
+    </div>
+  </main>
+}

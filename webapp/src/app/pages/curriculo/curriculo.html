@@ -1,0 +1,107 @@
+<div class="page-header">
+  <ul class="breadcrumb">
+    <li><a routerLink="/">Home</a></li>
+    <li class="sep">›</li>
+    <li>Currículo</li>
+  </ul>
+  <h1 class="page-title">Currículo</h1>
+</div>
+
+<main class="content">
+
+  <a href="/assets/pdf/curriculo.pdf" download class="download-btn" appFadeIn>
+    📄 Baixar currículo em PDF
+  </a>
+
+  <h2 class="section-title" appFadeIn>Dados Pessoais</h2>
+  <div class="info-grid" appFadeIn>
+    @for (info of personalInfo; track info.label) {
+      <div class="info-card">
+        <div class="info-label">{{ info.label }}</div>
+        <div class="info-value">{{ info.value }}</div>
+      </div>
+    }
+  </div>
+
+  <h2 class="section-title" appFadeIn>Sobre Mim</h2>
+  @for (paragraph of aboutText; track $index) {
+    <p class="about-text" appFadeIn>{{ paragraph }}</p>
+  }
+
+  <h2 class="section-title" appFadeIn>Experiência Profissional</h2>
+  @for (entry of experience; track entry.role) {
+    <div class="resume-card" appFadeIn>
+      <div class="resume-date">{{ entry.date }}</div>
+      <div class="resume-role">{{ entry.role }}</div>
+      <div class="resume-place">{{ entry.place }}</div>
+      <p class="resume-desc">{{ entry.desc }}</p>
+      <div class="tags">
+        @for (tag of entry.tags; track tag) {
+          <span class="tag">{{ tag }}</span>
+        }
+      </div>
+    </div>
+  }
+
+  <h2 class="section-title" appFadeIn>Educação</h2>
+  @for (entry of education; track entry.role) {
+    <div class="resume-card" appFadeIn>
+      <div class="resume-date">{{ entry.date }}</div>
+      <div class="resume-role">{{ entry.role }}</div>
+      <div class="resume-place">{{ entry.place }}</div>
+      <p class="resume-desc">{{ entry.desc }}</p>
+      <div class="tags">
+        @for (tag of entry.tags; track tag) {
+          <span class="tag">{{ tag }}</span>
+        }
+      </div>
+    </div>
+  }
+
+  <h2 class="section-title" appFadeIn>Certificações</h2>
+  @for (cert of certifications; track cert.title) {
+    <div class="cert-card" appFadeIn>
+      <h3>{{ cert.title }}</h3>
+      <div class="cert-issuer">{{ cert.issuer }}</div>
+      @if (cert.validity) {
+        <div class="cert-validity">{{ cert.validity }}</div>
+      }
+    </div>
+  }
+
+  <h2 class="section-title" appFadeIn>Cursos</h2>
+  <div class="courses-grid" appFadeIn>
+    @for (course of courses; track course.name) {
+      <div class="course-item">
+        <div class="course-provider">{{ course.provider }}</div>
+        <div class="course-name">{{ course.name }}</div>
+        <div class="course-year">{{ course.year }}</div>
+      </div>
+    }
+  </div>
+
+  <h2 class="section-title" appFadeIn>Habilidades</h2>
+  <p class="about-text" appFadeIn [innerHTML]="skillsText"></p>
+  <div class="tags" style="margin-bottom: 32px;" appFadeIn>
+    @for (tag of skillsTags; track tag) {
+      <span class="tag">{{ tag }}</span>
+    }
+  </div>
+
+  <h2 class="section-title" appFadeIn>Contato</h2>
+  <div class="info-grid" appFadeIn>
+    <div class="info-card">
+      <div class="info-label">E-mail</div>
+      <div class="info-value">mateusmattos327&#64;gmail.com</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">Celular</div>
+      <div class="info-value">+55 (027) 99786-5995</div>
+    </div>
+    <div class="info-card">
+      <div class="info-label">LinkedIn</div>
+      <div class="info-value"><a href="https://www.linkedin.com/in/mateus-de-mattos-ferreira" target="_blank" rel="noopener">mateus-de-mattos-ferreira</a></div>
+    </div>
+  </div>
+
+</main>

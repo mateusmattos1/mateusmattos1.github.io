@@ -1,0 +1,23 @@
+<div class="page-header">
+  <ul class="breadcrumb">
+    <li><a routerLink="/">Home</a></li>
+    <li class="sep">›</li>
+    <li>Portfólio</li>
+  </ul>
+  <h1 class="page-title">Portfólio</h1>
+</div>
+
+<main class="content">
+  <div class="portfolio-grid">
+    @for (project of projects; track project.slug) {
+      <div class="project-card" appFadeIn>
+        <img [src]="project.cardThumb" [alt]="project.cardTitle">
+        <div class="card-overlay">
+          <h3>{{ project.cardTitle }}</h3>
+          <p>{{ project.cardSubtitle }}</p>
+        </div>
+        <a [routerLink]="['/projetos', project.slug]" class="card-link" [attr.aria-label]="'Ver projeto ' + project.cardTitle"></a>
+      </div>
+    }
+  </div>
+</main>
